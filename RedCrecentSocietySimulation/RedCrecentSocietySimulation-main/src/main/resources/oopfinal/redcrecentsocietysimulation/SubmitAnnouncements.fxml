@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.SubmitAnnouncementsController">
+    <children>
+        <ButtonBar layoutX="301.0" layoutY="302.0" prefHeight="40.0" prefWidth="200.0" />
+        <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="760.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/redcrecent-removebg-preview.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="94.0" layoutY="82.0" text="Subject :" textFill="#faf9f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="126.0" text="To :" textFill="#faf9f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="170.0" text="Announcement: " textFill="#faf9f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="subjectField" layoutX="301.0" layoutY="83.0" style="-fx-background-color: #faf9f7;" />
+      <TextField fx:id="toField" layoutX="301.0" layoutY="127.0" style="-fx-background-color: #faf9f7;" />
+      <TextField fx:id="AnnouncementField" layoutX="301.0" layoutY="172.0" prefHeight="149.0" prefWidth="391.0" style="-fx-background-color: #faf9f7;" />
+      <Button layoutX="301.0" layoutY="433.0" mnemonicParsing="false" onAction="#submitAnnouncementOnAction" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: #faf9f7;" text="Submit Announcement" textFill="#141413" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="dashBoardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.BloodDonorHeadDashboardController">
+    <center>
+        <AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/redcrecent-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+    </center>
+    <left>
+        <VBox prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: offwhite;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#viewAnnualBudgetReportOnActon" prefHeight="26.0" prefWidth="293.0" text="View annual budget report">
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#SubmitFoodBudgetReportOnAction" prefHeight="26.0" prefWidth="286.0" text="Submit food budget report">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="55.0" mnemonicParsing="false" onAction="#SubmitReviewsOnAction" prefHeight="26.0" prefWidth="283.0" text="Submit reviews of blood donor department">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="80.0" mnemonicParsing="false" onAction="#SubmitBloodDonorMonthlyReportOnAction" prefHeight="26.0" prefWidth="375.0" text="Subnmit blooddonar monthly report">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="105.0" mnemonicParsing="false" onAction="#SubmitEventOrganizeOnAction" prefHeight="26.0" prefWidth="331.0" text="Submit event organize report">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#SubmitVolenteersReportOnAction" prefHeight="26.0" prefWidth="297.0" text="submit Volenteers Report">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="155.0" mnemonicParsing="false" onAction="#ViewAdminsAnnouncementOnAction" prefHeight="26.0" prefWidth="331.0" text="view admins announcements  ">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="180.0" mnemonicParsing="false" onAction="#SubmitEmergencyNoticeOnAction" prefHeight="26.0" prefWidth="284.0" text="submit emergency notice  ">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="26.0" prefWidth="247.0" text="Logout">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

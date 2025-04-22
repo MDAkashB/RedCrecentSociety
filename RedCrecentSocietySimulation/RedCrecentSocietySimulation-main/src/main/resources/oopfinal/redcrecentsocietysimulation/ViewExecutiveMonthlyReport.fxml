@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.ViewExecutiveMonthlyReportController">
+    <children>
+        <ButtonBar layoutX="301.0" layoutY="302.0" prefHeight="40.0" prefWidth="200.0" />
+        <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="760.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/redcrecent-removebg-preview.png" />
+            </image>
+        </ImageView>
+      <TableView fx:id="tableview" layoutX="71.0" layoutY="222.0" prefHeight="200.0" prefWidth="693.0">
+        <columns>
+          <TableColumn fx:id="toCol" prefWidth="171.0" text="To" />
+          <TableColumn fx:id="DateCol" prefWidth="224.0" text="Date" />
+            <TableColumn fx:id="monthlyrepCol" prefWidth="297.0" text="Monthly Report" />
+        </columns>
+      </TableView>
+      <Button layoutX="366.0" layoutY="169.0" mnemonicParsing="false" onAction="#showOnAction" text="Show" />
+    </children>
+</AnchorPane>

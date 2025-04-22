@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="dashBoardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.AdminDashboardController">
+   <center>
+      <AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/redcrecent-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </center>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="278.0" style="-fx-background-color: offwhite;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#submitAnnualBudgetReportOnAction" prefHeight="26.0" prefWidth="285.0" text="Submit Annual budget Report">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ViewFoodBudgetReportOnAction" prefHeight="26.0" prefWidth="290.0" text="View Food Budget Report">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="55.0" mnemonicParsing="false" onAction="#ViewRivewsOnAction" prefHeight="26.0" prefWidth="281.0" text="View reviews about Blood donor department">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="80.0" mnemonicParsing="false" onAction="#viewExecutiveMontrhlyReportOnAction" prefHeight="26.0" prefWidth="290.0" text="View executive Monthly report">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="105.0" mnemonicParsing="false" onAction="#ViewEventOrganizeReportOnAction" prefHeight="26.0" prefWidth="353.0" text="View event Organize report">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#ViewVolenteersReportOnAction" prefHeight="26.0" prefWidth="396.0" text="View volenteers Report">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="155.0" mnemonicParsing="false" onAction="#SubmitAnnouncementsOnAction" prefHeight="26.0" prefWidth="426.0" text="Submit announcements to executives">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="180.0" mnemonicParsing="false" onAction="#ViewEmergencyNoticeOnAction" prefHeight="26.0" prefWidth="397.0" text="View emergency notice">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="26.0" prefWidth="296.0" text="Logout ">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.LoginBloodDonorExecutiveController">
+    <children>
+        <ButtonBar layoutX="301.0" layoutY="302.0" prefHeight="40.0" prefWidth="200.0" />
+        <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="760.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/redcrecent-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="107.0" layoutY="165.0" text="Name: " textFill="#faf9f7">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="107.0" layoutY="209.0" text="Password:" textFill="#faf9f7">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameField" layoutX="314.0" layoutY="166.0" style="-fx-background-color: #faf9f7;" />
+        <TextField fx:id="passwordField" layoutX="314.0" layoutY="210.0" style="-fx-background-color: #faf9f7;" />
+        <Button layoutX="314.0" layoutY="342.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: #faf9f7;" text="Login " textFill="#141413" />
+        <Label layoutX="292.0" layoutY="36.0" text="Blood Donor Executive" textFill="#faf9f7" underline="true" wrapText="true">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

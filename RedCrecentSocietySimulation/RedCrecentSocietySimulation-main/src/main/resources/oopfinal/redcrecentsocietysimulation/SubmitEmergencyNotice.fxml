@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.SubmitEmergencyNoticeController">
+    <children>
+        <ButtonBar layoutX="301.0" layoutY="302.0" prefHeight="40.0" prefWidth="200.0" />
+        <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="760.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/redcrecent-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="106.0" layoutY="86.0" text="Title " textFill="#faf9f7">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="106.0" layoutY="127.0" text="To :" textFill="#faf9f7">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="106.0" layoutY="173.0" text="Date:" textFill="#faf9f7">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="107.0" layoutY="231.0" text="Notice " textFill="#faf9f7">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="TitleField" layoutX="216.0" layoutY="88.0" />
+        <DatePicker fx:id="datePicker" layoutX="215.0" layoutY="175.0" />
+        <ComboBox fx:id="toComboBox" layoutX="215.0" layoutY="129.0" prefWidth="150.0" />
+        <TextArea fx:id="Noticefield" layoutX="216.0" layoutY="231.0" prefHeight="156.0" prefWidth="390.0" />
+        <Button layoutX="215.0" layoutY="441.0" mnemonicParsing="false" onAction="#SubmitNoticeOnAction" text="Submit Notice" />
+    </children>
+</AnchorPane>

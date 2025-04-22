@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.SubmitVolenteersReportController">
+    <children>
+        <ButtonBar layoutX="301.0" layoutY="302.0" prefHeight="40.0" prefWidth="200.0" />
+        <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="760.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/redcrecent-removebg-preview.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="83.0" layoutY="83.0" text="Name:" textFill="#faf9f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="128.0" text="Id:" textFill="#faf9f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="168.0" text="Blood Group:" textFill="#faf9f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="215.0" text="Description :" textFill="#faf9f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namefield" layoutX="243.0" layoutY="84.0" style="-fx-background-color: #faf9f6;" />
+      <TextField fx:id="idfield" layoutX="243.0" layoutY="128.0" style="-fx-background-color: #faf9f6;" />
+      <TextField fx:id="bloodgroupfield" layoutX="243.0" layoutY="168.0" style="-fx-background-color: #faf9f6;" />
+      <TextArea fx:id="descriptionField" layoutX="239.0" layoutY="216.0" prefHeight="200.0" prefWidth="380.0" style="-fx-background-color: #faf9f6;" />
+      <Label fx:id="resultLabel" layoutX="93.0" layoutY="538.0" prefHeight="40.0" prefWidth="602.0" style="-fx-border-color: red; -fx-background-color: #faf9f6;" />
+      <Button layoutX="663.0" layoutY="71.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="127.0" prefWidth="150.0" text="Submit ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="345.0" layoutY="507.0" text="Output" textFill="#faf9f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

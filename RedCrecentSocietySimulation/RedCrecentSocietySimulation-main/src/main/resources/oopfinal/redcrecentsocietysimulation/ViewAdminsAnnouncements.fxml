@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="853.0" style="-fx-background-color: #38040E;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.ViewAdminsAnnouncementsController">
+    <children>
+        <ButtonBar layoutX="301.0" layoutY="302.0" prefHeight="40.0" prefWidth="200.0" />
+        <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="760.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/redcrecent-removebg-preview.png" />
+            </image>
+        </ImageView>
+      <TableView fx:id="tableview" layoutX="101.0" layoutY="202.0" prefHeight="295.0" prefWidth="692.0">
+        <columns>
+          <TableColumn fx:id="subjectCol" prefWidth="207.0" text="Subject" />
+          <TableColumn fx:id="toCol" prefWidth="151.0" text="To" />
+            <TableColumn fx:id="AnnouncementCol" prefWidth="333.0" text="Announcement" />
+        </columns>
+      </TableView>
+      <Button layoutX="382.0" layoutY="134.0" mnemonicParsing="false" onAction="#showOnAction" text="Show" />
+    </children>
+</AnchorPane>
