@@ -26,7 +26,7 @@ public class AdminLoginController implements Serializable
 
     public ObservableList<Admin> AdminWrite() {
         // Hardcoded values
-        String id1 = "sadman";
+        String id1 = "akash";
         String password1 = "1234";
 
         ObservableList<Admin> AdminList = FXCollections.observableArrayList();
