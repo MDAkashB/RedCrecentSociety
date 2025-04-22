@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="donnerNameInvest" prefHeight="579.0" prefWidth="667.0"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="oopfinal.redcrecentsocietysimulation.sponsor.donation_pageController">
+   <children>
+      <Label fx:id="d_titlee" layoutX="224.0" layoutY="26.0" text="Yes This is Donation Page" />
+      <TextField fx:id="donationAmount_feild" layoutX="218.0" layoutY="177.0" />
+      <ComboBox fx:id="payment_method_comboBox" layoutX="217.0" layoutY="225.0" prefWidth="150.0" />
+      <Label fx:id="ta" layoutX="445.0" layoutY="409.0" text="Total Amount " />
+      <Label fx:id="total_donation_amount" layoutX="550.0" layoutY="409.0" />
+      <Label layoutX="456.0" layoutY="221.0" text="My Donation" />
+      <Label fx:id="my_donation_amount" layoutX="537.0" layoutY="221.0" />
+      <Button layoutX="597.0" layoutY="532.0" mnemonicParsing="false" onAction="#backBButton" text="Back" />
+      <Label layoutX="45.0" layoutY="95.0" text="Donner Name" />
+      <TextField fx:id="donor_name_field" layoutX="218.0" layoutY="91.0" />
+      <Label layoutX="45.0" layoutY="135.0" text="Donneer Phonee Number " />
+      <TextField layoutX="218.0" layoutY="131.0" />
+      <Label fx:id="Your_Donation_Amount_text" layoutX="45.0" layoutY="181.0" text="Donation Amount" />
+      <Label layoutX="45.0" layoutY="229.0" text="Payment Method" />
+      <Line layoutX="442.0" layoutY="62.0" startX="-15.0" startY="302.0" endX="-16.0" endY="-62.0"/>
+      <Line layoutX="86.0" layoutY="372.0" startX="-86.0" startY="-8.5" endX="340.5" endY="-8.5"/>
+      <Label fx:id="total_donner_list_label" layoutX="39.0" layoutY="444.0" text="Total Donner list" />
+      <ComboBox fx:id="totaldonnerlist_combobox" layoutX="156.0" layoutY="440.0" prefWidth="150.0" />
+      <Label layoutX="39.0" layoutY="496.0" text="Donner Name" />
+      <Label layoutX="156.0" layoutY="496.0" />
+      <Label layoutX="39.0" layoutY="524.0" text="Donation Amount" />
+      <Label fx:id="donationAmountInvested" layoutX="171.0" layoutY="524.0" />
+      <Label fx:id="donationIinvestedAmount" layoutX="165.0" layoutY="524.0" prefWidth="123.0" />
+      <Button fx:id="c" layoutX="51.0" layoutY="290.0" mnemonicParsing="false" onAction="#confirm_donation_button" text="Confirm Donation" />
+      <Label fx:id="selectedDonorLabel" layoutX="300.0" layoutY="350.0" text="Selected Donor: " />
+   </children>
+</AnchorPane>

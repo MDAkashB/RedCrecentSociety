@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopfinal.redcrecentsocietysimulation.sponsor.SponsorController">
+   <children>
+      <Button layoutX="144.0" layoutY="110.0" mnemonicParsing="false"
+              onAction="#donationButton" prefHeight="25.0" prefWidth="206.0" text="Donate Please"/>
+      <Button fx:id="financial_manager_button" layoutX="138.0" layoutY="164.0" mnemonicParsing="false"
+              onAction="#financial_manager_button" prefHeight="25.0" prefWidth="215.0" text="Financial Manager"/>
+   </children>
+</AnchorPane>
