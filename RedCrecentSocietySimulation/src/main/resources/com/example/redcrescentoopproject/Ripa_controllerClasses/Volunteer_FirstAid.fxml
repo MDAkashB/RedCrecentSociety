@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="370.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Volunteer_FirstAidController">
+
+    <VBox layoutX="27.0" layoutY="25.0" prefHeight="320.0" prefWidth="442.0" spacing="10">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="First Aid Support Dashboard"/>
+
+        <VBox prefWidth="700.0" spacing="10">
+            <Label style="-fx-font-size: 16px;" text="Patient Registration"/>
+            <GridPane hgap="10" prefWidth="700.0" vgap="10">
+                <Label style="-fx-font-size: 14px;" text="Patient Name:" GridPane.columnIndex="0"
+                       GridPane.rowIndex="0"/>
+                <TextField prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                <Label style="-fx-font-size: 14px;" text="Age:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Label style="-fx-font-size: 14px;" text="Treatment Type:" GridPane.columnIndex="0"
+                       GridPane.rowIndex="2"/>
+                <ComboBox prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Label style="-fx-font-size: 14px;" text="Treatment Details:" GridPane.columnIndex="0"
+                       GridPane.rowIndex="3"/>
+                <TextArea prefHeight="100" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <columnConstraints>
+                    <ColumnConstraints/>
+                    <ColumnConstraints/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                </rowConstraints>
+            </GridPane>
+
+            <HBox alignment="BOTTOM_RIGHT" prefWidth="700.0" spacing="10">
+                <Button onAction="#handleSubmitTreatment" style="-fx-font-size: 14px;" text="Submit Treatment"/>
+            </HBox>
+        </VBox>
+    </VBox>
+</AnchorPane>

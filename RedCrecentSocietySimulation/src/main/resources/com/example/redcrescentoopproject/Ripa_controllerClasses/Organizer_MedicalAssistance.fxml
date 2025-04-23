@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Organizer_MedicalAssistanceController">
+
+    <VBox layoutX="10.0" layoutY="10.0" spacing="10" prefWidth="780.0">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;"
+            text="Emergency Medical Assistance Coordination" />
+
+        <TitledPane text="Medical Needs Assessment" expanded="true">
+            <VBox spacing="5">
+                <TextArea fx:id="needsAssessmentTextArea" prefHeight="100" prefWidth="760"
+                    promptText="Enter medical needs assessment...
+Example:
+- Number of affected people
+- Types of injuries/illnesses
+- Required medical specialties
+- Urgency levels
+- Special requirements" />
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Medical Team Assignments" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddTeamMember" text="Add Team Member" />
+                </HBox>
+                <TableView fx:id="teamTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="200" text="Medical Professional" />
+                        <TableColumn fx:id="specializationColumn" prefWidth="200"
+                            text="Specialization" />
+                        <TableColumn fx:id="statusColumn" prefWidth="200" text="Status" />
+                        <TableColumn fx:id="locationColumn" prefWidth="160" text="Location" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Medical Supplies" expanded="true">
+            <VBox spacing="5">
+                <TextArea fx:id="suppliesTextArea" prefHeight="100" prefWidth="760"
+                    promptText="Enter medical supplies and equipment details...
+Example:
+- First aid kits
+- Emergency medications
+- Medical equipment
+- PPE supplies
+- Specialized medical items" />
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Patient Records" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddRecord" text="Add Patient Record" />
+                </HBox>
+                <TableView fx:id="recordsTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="patientIdColumn" prefWidth="150" text="Patient ID" />
+                        <TableColumn fx:id="conditionColumn" prefWidth="200" text="Condition" />
+                        <TableColumn fx:id="treatmentColumn" prefWidth="200" text="Treatment" />
+                        <TableColumn fx:id="dateColumn" prefWidth="150" text="Date" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button onAction="#handleSave" text="Save Changes" prefWidth="150" />
+        </HBox>
+    </VBox>
+</AnchorPane> 

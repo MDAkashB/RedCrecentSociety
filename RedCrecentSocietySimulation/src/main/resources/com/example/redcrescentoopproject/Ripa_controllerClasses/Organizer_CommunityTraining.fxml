@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Organizer_CommunityTrainingController">
+
+    <VBox layoutX="10.0" layoutY="10.0" spacing="10" prefWidth="780.0">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;"
+            text="Community Awareness and Training Programs" />
+
+        <TitledPane text="Training Needs Assessment" expanded="true">
+            <VBox spacing="5">
+                <TextArea fx:id="needsAssessmentTextArea" prefHeight="100" prefWidth="760"
+                    promptText="Enter identified training needs and community requirements...
+Example:
+- Basic first aid training
+- Disaster preparedness workshops
+- Health and hygiene awareness
+- Emergency response protocols
+- Community resilience building" />
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Training Programs" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddTraining" text="Add New Training" />
+                </HBox>
+                <TableView fx:id="trainingTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="topicColumn" prefWidth="200" text="Training Topic" />
+                        <TableColumn fx:id="dateColumn" prefWidth="150" text="Date" />
+                        <TableColumn fx:id="trainerColumn" prefWidth="150" text="Trainer" />
+                        <TableColumn fx:id="locationColumn" prefWidth="150" text="Location" />
+                        <TableColumn fx:id="statusColumn" prefWidth="110" text="Status" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Training Materials" expanded="true">
+            <VBox spacing="5">
+                <TextArea fx:id="materialsTextArea" prefHeight="100" prefWidth="760"
+                    promptText="Enter training materials and resources...
+Example:
+- PowerPoint presentations
+- Handouts and worksheets
+- Video tutorials
+- Practical demonstration guides
+- Assessment tools" />
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Feedback and Evaluation" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddFeedback" text="Add Feedback" />
+                </HBox>
+                <TableView fx:id="feedbackTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="trainingTopicColumn" prefWidth="200"
+                            text="Training Topic" />
+                        <TableColumn fx:id="feedbackColumn" prefWidth="300" text="Feedback" />
+                        <TableColumn fx:id="feedbackDateColumn" prefWidth="150" text="Date" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button onAction="#handleSave" text="Save Changes" prefWidth="150" />
+        </HBox>
+    </VBox>
+</AnchorPane>

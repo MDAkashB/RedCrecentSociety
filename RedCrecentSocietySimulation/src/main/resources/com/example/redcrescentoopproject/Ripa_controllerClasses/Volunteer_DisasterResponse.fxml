@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="492.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Volunteer_DisasterResponseController">
+
+    <VBox layoutX="20.0" layoutY="21.0" prefHeight="460.0" prefWidth="561.0" spacing="10">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Disaster Response"/>
+
+        <VBox prefWidth="700.0" spacing="10">
+            <Label style="-fx-font-size: 16px;" text="Assigned Disaster Zones"/>
+            <TableView prefHeight="200" prefWidth="589.0">
+                <columns>
+                    <TableColumn prefWidth="158.0" text="Zone"/>
+                    <TableColumn prefWidth="145.0" text="Status"/>
+                    <TableColumn prefWidth="259.0" text="Required Aid"/>
+                </columns>
+            </TableView>
+
+            <Label style="-fx-font-size: 16px;" text="Submit Disaster Report"/>
+            <TextArea prefHeight="100" prefWidth="700.0" promptText="Enter report details..."/>
+
+            <HBox alignment="BOTTOM_RIGHT" prefWidth="700.0" spacing="10">
+                <Button onAction="#handleSubmitReport" style="-fx-font-size: 14px;" text="Submit Report"/>
+            </HBox>
+        </VBox>
+    </VBox>
+</AnchorPane>

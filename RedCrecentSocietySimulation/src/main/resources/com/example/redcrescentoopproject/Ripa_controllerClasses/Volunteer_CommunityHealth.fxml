@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="346.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Volunteer_CommunityHealthController">
+
+    <VBox layoutX="50.0" layoutY="50.0" prefHeight="210.0" prefWidth="433.0" spacing="10">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Community Health Dashboard"/>
+
+        <VBox prefWidth="700.0" spacing="10">
+            <Label style="-fx-font-size: 16px;" text="Health Program Registration"/>
+            <GridPane hgap="10" prefWidth="700.0" vgap="10">
+                <Label style="-fx-font-size: 14px;" text="Program Name:" GridPane.columnIndex="0"
+                       GridPane.rowIndex="0"/>
+                <TextField prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                <Label style="-fx-font-size: 14px;" text="Location:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Label style="-fx-font-size: 14px;" text="Date:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <DatePicker prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <columnConstraints>
+                    <ColumnConstraints/>
+                    <ColumnConstraints/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                    <RowConstraints/>
+                </rowConstraints>
+            </GridPane>
+
+            <HBox alignment="BOTTOM_RIGHT" prefWidth="700.0" spacing="10"/>
+        </VBox>
+    </VBox>
+    <Button layoutX="220.0" layoutY="268.0" onAction="#handleSubmitProgram" style="-fx-font-size: 14px;"
+            text="Submit Program"/>
+</AnchorPane>

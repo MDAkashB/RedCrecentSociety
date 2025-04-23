@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Organizer_EnvironmentalHealthController">
+
+    <HBox spacing="10" layoutX="10.0" layoutY="10.0" prefWidth="780.0">
+        <!-- Left Side - Input Fields -->
+        <VBox spacing="10" prefWidth="300">
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="New Campaign" />
+
+            <VBox spacing="5">
+                <Label text="Campaign Name:" />
+                <TextField fx:id="campaignNameField" />
+
+                <Label text="Location:" />
+                <TextField fx:id="locationField" />
+
+                <Label text="Date:" />
+                <DatePicker fx:id="datePicker" />
+
+                <Label text="Description:" />
+                <TextArea fx:id="descriptionTextArea" prefHeight="100"
+                    promptText="Enter campaign details..." />
+
+                <Label text="Progress:" />
+                <TextArea fx:id="progressTextArea" prefHeight="100"
+                    promptText="Enter progress updates..." />
+
+                <Label text="Impact Assessment:" />
+                <TextArea fx:id="impactTextArea" prefHeight="100"
+                    promptText="Enter impact assessment..." />
+
+                <Button onAction="#handleAddCampaign" text="Add Campaign" prefWidth="280" />
+            </VBox>
+        </VBox>
+
+        <!-- Right Side - Tables and Details -->
+        <VBox spacing="10" prefWidth="480">
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Campaign Management" />
+
+            <TableView fx:id="campaignTable" prefHeight="200" prefWidth="460">
+                <columns>
+                    <TableColumn fx:id="campaignNameColumn" prefWidth="120" text="Name" />
+                    <TableColumn fx:id="locationColumn" prefWidth="120" text="Location" />
+                    <TableColumn fx:id="dateColumn" prefWidth="100" text="Date" />
+                    <TableColumn fx:id="statusColumn" prefWidth="120" text="Status" />
+                </columns>
+            </TableView>
+
+            <TableView fx:id="volunteerTable" prefHeight="200" prefWidth="460">
+                <columns>
+                    <TableColumn fx:id="volunteerNameColumn" prefWidth="120" text="Volunteer" />
+                    <TableColumn fx:id="roleColumn" prefWidth="120" text="Role" />
+                    <TableColumn fx:id="volunteerStatusColumn" prefWidth="120" text="Status" />
+                    <TableColumn fx:id="volunteerLocationColumn" prefWidth="100" text="Location" />
+                </columns>
+            </TableView>
+
+            <HBox spacing="10" alignment="CENTER_RIGHT">
+                <Button onAction="#handleAddVolunteer" text="Add Volunteer" />
+                <Button onAction="#handleSaveChanges" text="Save Changes" />
+            </HBox>
+        </VBox>
+    </HBox>
+</AnchorPane> 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Organizer_DisasterResponseController">
+
+    <VBox layoutX="10.0" layoutY="10.0" spacing="10" prefWidth="780.0">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;"
+            text="Disaster Response Management" />
+
+        <TitledPane text="Weather and Crisis Alerts" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddAlert" text="Add New Alert" />
+                </HBox>
+                <TextArea fx:id="weatherAlertsTextArea" prefHeight="150" prefWidth="760"
+                    promptText="Weather and crisis alerts will appear here..." />
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Volunteer Assignments" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddAssignment" text="Add New Assignment" />
+                </HBox>
+                <TableView fx:id="volunteerTable" prefHeight="200" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="volunteerNameColumn" prefWidth="200"
+                            text="Volunteer Name" />
+                        <TableColumn fx:id="assignedRoleColumn" prefWidth="200" text="Assigned Role" />
+                        <TableColumn fx:id="statusColumn" prefWidth="200" text="Status" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Coordination Notes" expanded="true">
+            <VBox spacing="5">
+                <TextArea fx:id="coordinationNotesTextArea" prefHeight="150" prefWidth="760"
+                    promptText="Enter coordination notes with authorities and NGOs..." />
+            </VBox>
+        </TitledPane>
+
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button onAction="#handleSave" text="Save Changes" prefWidth="150" />
+        </HBox>
+    </VBox>
+</AnchorPane> 

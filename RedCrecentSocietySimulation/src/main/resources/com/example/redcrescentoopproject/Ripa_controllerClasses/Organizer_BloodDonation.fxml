@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Organizer_BloodDonationController">
+
+    <VBox layoutX="10.0" layoutY="10.0" spacing="10" prefWidth="780.0">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;"
+            text="Blood Donation Drive Coordination" />
+
+        <TitledPane text="Drive Schedule" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddDrive" text="Add New Drive" />
+                </HBox>
+                <TableView fx:id="driveTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="driveNameColumn" prefWidth="200" text="Drive Name" />
+                        <TableColumn fx:id="locationColumn" prefWidth="200" text="Location" />
+                        <TableColumn fx:id="startTimeColumn" prefWidth="200" text="Start Time" />
+                        <TableColumn fx:id="statusColumn" prefWidth="160" text="Status" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Volunteer Assignments" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddAssignment" text="Add New Assignment" />
+                </HBox>
+                <TableView fx:id="volunteerTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="volunteerNameColumn" prefWidth="200"
+                            text="Volunteer Name" />
+                        <TableColumn fx:id="roleColumn" prefWidth="200" text="Role" />
+                        <TableColumn fx:id="assignmentStatusColumn" prefWidth="200" text="Status" />
+                        <TableColumn fx:id="driveColumn" prefWidth="160" text="Drive" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Campaign and Safety Details" expanded="true">
+            <VBox spacing="5">
+                <Label text="Promotion Details" />
+                <TextArea fx:id="promotionTextArea" prefHeight="100" prefWidth="760"
+                    promptText="Example: 
+- Social media campaign on Facebook and Instagram
+- Community outreach in local markets
+- School and college awareness programs
+- Radio announcements
+- Poster distribution in key locations" />
+
+                <Label text="Safety Measures" />
+                <TextArea fx:id="safetyTextArea" prefHeight="100" prefWidth="760"
+                    promptText="Example:
+- Medical screening area setup
+- Sanitization protocols
+- Emergency medical team on standby
+- Proper spacing between donation beds
+- Temperature checks at entry
+- PPE for all staff and volunteers" />
+            </VBox>
+        </TitledPane>
+
+        <TitledPane text="Donor Follow-ups" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <Button onAction="#handleAddFollowUp" text="Add Follow-up" />
+                </HBox>
+                <TableView fx:id="followUpTable" prefHeight="150" prefWidth="760">
+                    <columns>
+                        <TableColumn fx:id="donorNameColumn" prefWidth="200" text="Donor Name" />
+                        <TableColumn fx:id="followUpDateColumn" prefWidth="200"
+                            text="Follow-up Date" />
+                        <TableColumn fx:id="followUpStatusColumn" prefWidth="200" text="Status" />
+                        <TableColumn fx:id="followUpNotesColumn" prefWidth="160" text="Notes" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </TitledPane>
+
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button onAction="#handleSave" text="Save Changes" prefWidth="150" />
+        </HBox>
+    </VBox>
+</AnchorPane>

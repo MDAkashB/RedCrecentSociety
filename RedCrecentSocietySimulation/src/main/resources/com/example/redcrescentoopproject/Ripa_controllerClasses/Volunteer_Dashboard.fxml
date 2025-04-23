@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="561.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Volunteer_DashboardController">
+    <Button layoutX="30.0" layoutY="60.0" onAction="#handleDisasterResponse" prefHeight="36.0" prefWidth="168.0"
+            style="-fx-font-size: 14px;" text="Disaster Response"/>
+
+    <Button layoutX="30.0" layoutY="276.0" onAction="#handleFirstAid" prefHeight="37.0" prefWidth="169.0"
+            style="-fx-font-size: 14px;" text="First Aid Support"/>
+
+    <Button layoutX="30.0" layoutY="106.0" onAction="#handleBloodDonation" prefHeight="41.0" prefWidth="169.0"
+            style="-fx-font-size: 14px;" text="Blood Donation"/>
+
+    <Button layoutX="30.0" layoutY="324.0" onAction="#handleCommunityHealth" prefHeight="40.0" prefWidth="171.0"
+            style="-fx-font-size: 14px;" text="Community Health"/>
+
+    <Button layoutX="30.0" layoutY="158.0" onAction="#handleRefugeeSupport" prefHeight="42.0" prefWidth="169.0"
+            style="-fx-font-size: 14px;" text="Refugee Support"/>
+
+    <Button layoutX="30.0" layoutY="374.0" onAction="#handleShelterFood" prefHeight="43.0" prefWidth="171.0"
+            style="-fx-font-size: 14px;" text="Shelter and Food"/>
+
+    <Button layoutX="30.0" layoutY="213.0" onAction="#handleFundraising" prefHeight="46.0" prefWidth="168.0"
+            style="-fx-font-size: 14px;" text="Fundraising"/>
+
+    <Button layoutX="30.0" layoutY="427.0" onAction="#handleVolunteerManagement" prefHeight="51.0" prefWidth="171.0"
+            style="-fx-font-size: 14px;" text="Volunteer Management"/>
+    <Button layoutX="694.0" layoutY="15.0" onAction="#handleLogout" style="-fx-font-size: 14px;" text="Logout"/>
+    <Label layoutX="281.0" layoutY="13.0" style="-fx-font-size: 24px; -fx-font-weight: bold;"
+           text="Volunteer Dashboard"/>
+    <BorderPane fx:id="borderpane" layoutX="218.0" layoutY="61.0" prefHeight="490.0" prefWidth="683.0"/>
+</AnchorPane>

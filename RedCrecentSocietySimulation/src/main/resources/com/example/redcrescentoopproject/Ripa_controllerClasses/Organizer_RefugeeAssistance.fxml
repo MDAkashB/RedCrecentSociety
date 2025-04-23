@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.example.bangladeshredcrescentsociety.Ripa_controllerClasses.Organizer_RefugeeAssistanceController">
+
+    <VBox layoutX="10.0" layoutY="10.0" spacing="10" prefWidth="580.0">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;"
+            text="Refugee and Homeless Assistance" />
+
+        <Label text="At-Risk Groups Assessment" />
+        <TextArea prefHeight="80" prefWidth="580"
+            promptText="Enter assessment of at-risk groups..." />
+
+        <Label text="Shelter and Support Records" />
+        <TableView prefHeight="150" prefWidth="580">
+            <columns>
+                <TableColumn prefWidth="180" text="Location" />
+                <TableColumn prefWidth="180" text="Capacity" />
+                <TableColumn prefWidth="180" text="Status" />
+            </columns>
+        </TableView>
+
+        <Label text="Support Services" />
+        <TextArea prefHeight="80" prefWidth="580"
+            promptText="Enter support services and resources..." />
+
+        <Button onAction="#handleSave" text="Save Changes" prefWidth="150" />
+    </VBox>
+</AnchorPane> 
