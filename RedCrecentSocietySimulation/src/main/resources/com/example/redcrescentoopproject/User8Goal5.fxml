@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redcrescentoopproject.User8Goal5">
+    <children>
+        <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report ID:" />
+        <Text layoutX="36.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disease Name:" />
+        <Text layoutX="36.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+        <Text layoutX="36.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cases Reported:" />
+        <Text layoutX="36.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Date:" />
+        <Text layoutX="36.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity Level:" />
+        <Text layoutX="36.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reported By:" />
+        <Text layoutX="36.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Notes:" />
+
+        <TextField fx:id="reportIdTextField" layoutX="180.0" layoutY="30.0" prefWidth="250.0" />
+        <ComboBox fx:id="diseaseComboBox" layoutX="180.0" layoutY="70.0" prefWidth="250.0" />
+        <TextField fx:id="locationTextField" layoutX="180.0" layoutY="110.0" prefWidth="250.0" />
+        <TextField fx:id="casesTextField" layoutX="180.0" layoutY="150.0" prefWidth="250.0" />
+        <DatePicker fx:id="reportDatePicker" layoutX="180.0" layoutY="190.0" />
+        <ComboBox fx:id="severityComboBox" layoutX="180.0" layoutY="230.0" prefWidth="150.0" />
+        <TextField fx:id="reportedByTextField" layoutX="180.0" layoutY="270.0" prefWidth="250.0" />
+        <TextArea fx:id="notesTextArea" layoutX="180.0" layoutY="310.0" prefHeight="60.0" prefWidth="250.0" />
+
+        <Button layoutX="180.0" layoutY="390.0" mnemonicParsing="false" onAction="#addReportButtonOnClick" prefWidth="120.0" text="Add Report" />
+        <Button layoutX="320.0" layoutY="390.0" mnemonicParsing="false" onAction="#updateStatusButtonOnClick" prefWidth="120.0" text="Update Status" />
+
+        <TableView fx:id="outbreakTableView" layoutX="36.0" layoutY="440.0" prefHeight="150.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="reportIdTableCol" prefWidth="80.0" text="Report ID" />
+                <TableColumn fx:id="diseaseTableCol" prefWidth="120.0" text="Disease" />
+                <TableColumn fx:id="locationTableCol" prefWidth="120.0" text="Location" />
+                <TableColumn fx:id="casesTableCol" prefWidth="80.0" text="Cases" />
+                <TableColumn fx:id="reportDateTableCol" prefWidth="100.0" text="Report Date" />
+                <TableColumn fx:id="severityTableCol" prefWidth="80.0" text="Severity" />
+                <TableColumn fx:id="statusTableCol" prefWidth="100.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

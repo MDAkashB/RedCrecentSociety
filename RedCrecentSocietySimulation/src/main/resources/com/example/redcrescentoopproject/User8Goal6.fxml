@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redcrescentoopproject.User8Goal6">
+    <children>
+        <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training ID:" />
+        <Text layoutX="36.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Name:" />
+        <Text layoutX="36.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer:" />
+        <Text layoutX="36.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Date:" />
+        <Text layoutX="36.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+        <Text layoutX="36.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration (hrs):" />
+        <Text layoutX="36.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volunteer IDs:" />
+        <Text layoutX="36.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Materials:" />
+
+        <TextField fx:id="trainingIdTextField" layoutX="180.0" layoutY="30.0" prefWidth="250.0" />
+        <TextField fx:id="trainingNameTextField" layoutX="180.0" layoutY="70.0" prefWidth="250.0" />
+        <ComboBox fx:id="trainerComboBox" layoutX="180.0" layoutY="110.0" prefWidth="250.0" />
+        <DatePicker fx:id="trainingDatePicker" layoutX="180.0" layoutY="150.0" />
+        <TextField fx:id="locationTextField" layoutX="180.0" layoutY="190.0" prefWidth="250.0" />
+        <TextField fx:id="durationTextField" layoutX="180.0" layoutY="230.0" prefWidth="250.0" />
+        <TextArea fx:id="volunteerIdsTextArea" layoutX="180.0" layoutY="270.0" prefHeight="50.0" prefWidth="250.0" promptText="Enter comma-separated IDs"/>
+        <ComboBox fx:id="materialsComboBox" layoutX="180.0" layoutY="330.0" prefWidth="250.0" />
+
+        <Button layoutX="180.0" layoutY="390.0" mnemonicParsing="false" onAction="#scheduleTrainingButtonOnClick" prefWidth="150.0" text="Schedule Training" />
+        <Button layoutX="350.0" layoutY="390.0" mnemonicParsing="false" onAction="#cancelTrainingButtonOnClick" prefWidth="150.0" text="Cancel Training" style="-fx-background-color: #ff4444;" />
+
+        <TableView fx:id="trainingsTableView" layoutX="36.0" layoutY="440.0" prefHeight="150.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="trainingIdTableCol" prefWidth="80.0" text="Training ID" />
+                <TableColumn fx:id="trainingNameTableCol" prefWidth="120.0" text="Training Name" />
+                <TableColumn fx:id="trainerTableCol" prefWidth="120.0" text="Trainer" />
+                <TableColumn fx:id="dateTableCol" prefWidth="100.0" text="Date" />
+                <TableColumn fx:id="locationTableCol" prefWidth="120.0" text="Location" />
+                <TableColumn fx:id="durationTableCol" prefWidth="80.0" text="Duration" />
+                <TableColumn fx:id="statusTableCol" prefWidth="100.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

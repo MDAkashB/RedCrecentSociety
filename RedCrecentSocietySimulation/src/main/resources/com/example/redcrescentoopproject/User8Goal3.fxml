@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redcrescentoopproject.User8Goal3">
+    <children>
+        <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request ID:" />
+        <Text layoutX="36.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name:" />
+        <Text layoutX="36.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" />
+        <Text layoutX="36.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity:" />
+        <Text layoutX="36.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Urgency:" />
+        <Text layoutX="36.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request Date:" />
+        <Text layoutX="36.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested By:" />
+        <Text layoutX="36.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purpose:" />
+
+        <TextField fx:id="requestIdTextField" layoutX="180.0" layoutY="30.0" prefWidth="250.0" />
+        <TextField fx:id="itemNameTextField" layoutX="180.0" layoutY="70.0" prefWidth="250.0" />
+        <ComboBox fx:id="categoryComboBox" layoutX="180.0" layoutY="110.0" prefWidth="250.0" />
+        <TextField fx:id="quantityTextField" layoutX="180.0" layoutY="150.0" prefWidth="250.0" />
+        <ComboBox fx:id="urgencyComboBox" layoutX="180.0" layoutY="190.0" prefWidth="150.0" />
+        <DatePicker fx:id="requestDatePicker" layoutX="180.0" layoutY="230.0" />
+        <TextField fx:id="requestedByTextField" layoutX="180.0" layoutY="270.0" prefWidth="250.0" />
+        <TextArea fx:id="purposeTextArea" layoutX="180.0" layoutY="310.0" prefHeight="60.0" prefWidth="250.0" />
+
+        <Button layoutX="180.0" layoutY="390.0" mnemonicParsing="false" onAction="#submitRequestButtonOnClick" prefWidth="150.0" text="Submit Request" />
+        <Button layoutX="350.0" layoutY="390.0" mnemonicParsing="false" onAction="#updateStatusButtonOnClick" prefWidth="150.0" text="Update Status" />
+
+        <TableView fx:id="supplyTableView" layoutX="36.0" layoutY="440.0" prefHeight="150.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="requestIdTableCol" prefWidth="100.0" text="Request ID" />
+                <TableColumn fx:id="itemNameTableCol" prefWidth="120.0" text="Item Name" />
+                <TableColumn fx:id="categoryTableCol" prefWidth="100.0" text="Category" />
+                <TableColumn fx:id="quantityTableCol" prefWidth="80.0" text="Quantity" />
+                <TableColumn fx:id="urgencyTableCol" prefWidth="80.0" text="Urgency" />
+                <TableColumn fx:id="requestDateTableCol" prefWidth="100.0" text="Request Date" />
+                <TableColumn fx:id="statusTableCol" prefWidth="100.0" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

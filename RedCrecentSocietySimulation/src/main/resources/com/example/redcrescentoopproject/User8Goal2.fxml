@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redcrescentoopproject.User8Goal2">
+    <children>
+        <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient ID:" />
+        <Text layoutX="36.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Name:" />
+        <Text layoutX="36.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Condition:" />
+        <Text layoutX="36.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assigned Doctor:" />
+        <Text layoutX="36.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Specialty:" />
+        <Text layoutX="36.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assignment Date:" />
+        <Text layoutX="36.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority Level:" />
+        <Text layoutX="36.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Notes:" />
+
+        <TextField fx:id="patientIdTextField" layoutX="180.0" layoutY="30.0" prefWidth="250.0" />
+        <TextField fx:id="patientNameTextField" layoutX="180.0" layoutY="70.0" prefWidth="250.0" />
+        <TextArea fx:id="medicalConditionTextArea" layoutX="180.0" layoutY="110.0" prefHeight="50.0" prefWidth="250.0" />
+        <ComboBox fx:id="doctorComboBox" layoutX="180.0" layoutY="170.0" prefWidth="250.0" />
+        <TextField fx:id="specialtyTextField" layoutX="180.0" layoutY="210.0" prefWidth="250.0" editable="false" />
+        <DatePicker fx:id="assignmentDatePicker" layoutX="180.0" layoutY="250.0" />
+        <ComboBox fx:id="priorityComboBox" layoutX="180.0" layoutY="290.0" prefWidth="150.0" />
+        <TextArea fx:id="notesTextArea" layoutX="180.0" layoutY="330.0" prefHeight="50.0" prefWidth="250.0" />
+
+        <Button layoutX="180.0" layoutY="400.0" mnemonicParsing="false" onAction="#assignButtonOnClick" prefWidth="120.0" text="Assign Doctor" />
+
+        <TableView fx:id="assignmentsTableView" layoutX="36.0" layoutY="450.0" prefHeight="140.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="patientIdTableCol" prefWidth="100.0" text="Patient ID" />
+                <TableColumn fx:id="patientNameTableCol" prefWidth="120.0" text="Patient Name" />
+                <TableColumn fx:id="doctorTableCol" prefWidth="150.0" text="Assigned Doctor" />
+                <TableColumn fx:id="specialtyTableCol" prefWidth="120.0" text="Specialty" />
+                <TableColumn fx:id="priorityTableCol" prefWidth="80.0" text="Priority" />
+                <TableColumn fx:id="dateTableCol" prefWidth="120.0" text="Assignment Date" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
