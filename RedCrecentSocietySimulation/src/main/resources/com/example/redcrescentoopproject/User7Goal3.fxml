@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redcrescentoopproject.User7Goal3">
+    <children>
+        <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Session Name:" />
+        <Text layoutX="36.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Module ID:" />
+        <Text layoutX="36.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+        <Text layoutX="36.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time:" />
+        <Text layoutX="36.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time:" />
+        <Text layoutX="36.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" />
+        <Text layoutX="36.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes:" />
+
+        <TextField fx:id="sessionNameTextField" layoutX="180.0" layoutY="30.0" prefWidth="250.0" />
+        <TextField fx:id="moduleIdTextField" layoutX="180.0" layoutY="70.0" prefWidth="250.0" />
+        <DatePicker fx:id="sessionDatePicker" layoutX="180.0" layoutY="110.0" />
+        <TextField fx:id="startTimeTextField" layoutX="180.0" layoutY="150.0" prefWidth="250.0" promptText="HH:MM" />
+        <TextField fx:id="endTimeTextField" layoutX="180.0" layoutY="190.0" prefWidth="250.0" promptText="HH:MM" />
+        <TextField fx:id="locationTextField" layoutX="180.0" layoutY="230.0" prefWidth="250.0" />
+        <TextArea fx:id="notesTextArea" layoutX="180.0" layoutY="270.0" prefHeight="60.0" prefWidth="250.0" />
+
+        <Button layoutX="180.0" layoutY="350.0" mnemonicParsing="false" onAction="#scheduleButtonOnClick" prefWidth="100.0" text="Schedule" />
+
+        <TableView fx:id="sessionsTableView" layoutX="36.0" layoutY="400.0" prefHeight="180.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="sessionNameTableCol" prefWidth="150.0" text="Session Name" />
+                <TableColumn fx:id="moduleIdTableCol" prefWidth="100.0" text="Module ID" />
+                <TableColumn fx:id="sessionDateTableCol" prefWidth="120.0" text="Date" />
+                <TableColumn fx:id="startTimeTableCol" prefWidth="100.0" text="Start Time" />
+                <TableColumn fx:id="endTimeTableCol" prefWidth="100.0" text="End Time" />
+                <TableColumn fx:id="locationTableCol" prefWidth="150.0" text="Location" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

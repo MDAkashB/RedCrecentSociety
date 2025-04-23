@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redcrescentoopproject.User7Goal4">
+    <children>
+        <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volunteer ID:" />
+        <Text layoutX="36.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Module ID:" />
+        <Text layoutX="36.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assessment Date:" />
+        <Text layoutX="36.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Performance Score:" />
+        <Text layoutX="36.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Rate:" />
+        <Text layoutX="36.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feedback:" />
+
+        <TextField fx:id="volunteerIdTextField" layoutX="180.0" layoutY="30.0" prefWidth="250.0" />
+        <TextField fx:id="moduleIdTextField" layoutX="180.0" layoutY="70.0" prefWidth="250.0" />
+        <DatePicker fx:id="assessmentDatePicker" layoutX="180.0" layoutY="110.0" />
+        <TextField fx:id="performanceScoreTextField" layoutX="180.0" layoutY="150.0" prefWidth="250.0" promptText="0-100" />
+        <TextField fx:id="attendanceRateTextField" layoutX="180.0" layoutY="190.0" prefWidth="250.0" promptText="0-100%" />
+        <TextArea fx:id="feedbackTextArea" layoutX="180.0" layoutY="230.0" prefHeight="60.0" prefWidth="250.0" />
+
+        <Button layoutX="180.0" layoutY="310.0" mnemonicParsing="false" onAction="#recordButtonOnClick" prefWidth="100.0" text="Record" />
+
+        <TableView fx:id="performanceTableView" layoutX="36.0" layoutY="360.0" prefHeight="220.0" prefWidth="730.0">
+            <columns>
+                <TableColumn fx:id="volunteerIdTableCol" prefWidth="100.0" text="Volunteer ID" />
+                <TableColumn fx:id="moduleIdTableCol" prefWidth="100.0" text="Module ID" />
+                <TableColumn fx:id="assessmentDateTableCol" prefWidth="120.0" text="Assessment Date" />
+                <TableColumn fx:id="performanceScoreTableCol" prefWidth="120.0" text="Performance Score" />
+                <TableColumn fx:id="attendanceRateTableCol" prefWidth="120.0" text="Attendance Rate" />
+                <TableColumn fx:id="feedbackTableCol" prefWidth="150.0" text="Feedback" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
